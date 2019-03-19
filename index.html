@@ -8,19 +8,24 @@
         <div class="searchbar">
             <form name="sloc" id="sloc">
                 <input name="search" placeholder="Search" id="search">
+                <button class="sub" type="submit" form="sloc" id="load">
+                    <i class="icon ion-md-search"></i>
+                </button>
                 <button type="submit" for="sloc"></button>
             </form>
         </div>
         <div id="dbmap"></div>
         <script>
             var map;
+            var loc = {lat: 12.97, lng: 79.16}
             function initMap(){
                 map = new google.maps.Map(document.getElementById("map"),{
-                    center: {lat: -34.397, lng: 150.644},
+                    center: loc,
                     zoom: 16
                 })
             }
         </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     </body>
 </html>
 
