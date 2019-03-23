@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+        <meta name="viewport" content="initial-scale=1.0">
+        <title>MAP WALA THINGY</title>
+    </head>
+    <body>
+        <section class='wht'>
+            <h2> Visualization of BlockChain
+            </h2>
+            <div class='random' id='block'>  </div>
+        </section>
+        <section class="foot">
+            <div class="row">
+                &copy; Sanchi Chopra, Dhruv Mittal, Deepak Nahar, Debajit Datta, Angad Sharma 2019, Technica
+            </div>
+        </section>
+        <script>
+            var map;
+            var loc = {lat: 12.97, lng: 79.16}
+            function initMap(){
+                map = new google.maps.Map(document.getElementById("map"),{
+                    center: loc,
+                    zoom: 18
+                })
+                var mark = new google.maps.Marker({
+                    position: loc,
+                    map: map
+                })
+            }
+        </script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/bc.js"></script>
+    </body>
+</html>

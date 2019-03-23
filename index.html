@@ -5,30 +5,53 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
         <meta name="viewport" content="initial-scale=1.0">
-        <title>MAP WALA THINGY</title>
+        <title>ZOPP</title>
     </head>
     <body>
         <section class="top">
-            <h1>project ka naam decide karoooo 
+            <h1>ZOPP 
             </h1>
         </section>
         <section class="top2">
             <h2>About Us</h2>
-            <div class="row"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+            <div class="row" style="text-align: justify"> 
+                This blockchain - based system aims at safe installation of electricity connection. In India there is a rule sanctioned by the CEA (Central Electricity Authority) that the nearest live wire should be at least 1.2 metres (minimum for low tension wires) away from the walls of the nearest building, else a meter won't be installed. This product rectifies the possible occurrence of unnecessary meters.
+                <br>
+                1. Creating a system so that electricity inspection officials won't have to manually inspect the horizontal clearance
+                <br>
+                2. Using GIS (which has a database of all of the electric poles) , we will be measuring the most safe distance of a building.
+                <br>
+                3. If the distance is unsafe, an alert will be sent to the concerned authorities who can deny their connection on the spot
+                <br>
+                4. Defaulters in the inspection department will be saved in a blockchain for maintaining un-tamperable security                                     <br>
+                This project will thus, help in uprooting corruption and maintaining an organised system for construction department.
             </div>
         </section>
-        <div class="searchbar">
-            <form name="sloc" id="sloc">
-                <input name="search" placeholder="Search" id="search">
-                <button class="sub" type="submit" form="sloc" id="load">
-                    <i class="icon ion-md-search" style="height: 50px;"></i>
-                </button>
-            </form>
-        </div>
+        <section class="ser">
+            <div class="searchbar">
+                <form name="sloc" id="sloc">
+                    <input type="text" name="search" placeholder="Search" id="search"><input type="number" name="rad" placeholder="Radius (in metres)" id="rad">
+                    <button class="sub" type="submit" form="sloc" id="load">
+                        <i class="icon ion-md-search" style="height: 50px;"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
         <div id="map"></div>
+        
+        <section class="wht">
+            <h2>BlockChain </h2>
+            <a href="./blockchain.html" class="bc">Visualize Blockchain</a>
+        </section>
+        <section class="foot">
+            <div class="row"> 
+                &copy; Sanchi Chopra, Dhruv Mittal, Deepak Nahar, Debajit Datta, Angad Sharma 2019, Technica
+            </div>
+        </section>
         <script>
             var map;
             var loc = {lat: 12.97, lng: 79.16}
+            var loc2= {'lat':12.97298323, 'lng':79.16381103}
             function initMap(){
                 map = new google.maps.Map(document.getElementById("map"),{
                     center: loc,
@@ -41,6 +64,6 @@
             }
         </script>
         <script type="text/javascript" src="js/map.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4g5BpF0ntigP5d3LfulYDUUT0bxWvC54&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWLKdkzzWoP5enV4Ap5SCcQXIqAW6K0-0&callback=initMap" async defer></script>
     </body>
 </html>
