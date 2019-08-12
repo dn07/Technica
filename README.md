@@ -1,3 +1,3 @@
-# Technica
-Baarish ke keede
-Front-end of baarish ke keede project
+# Technica Hackathon
+Team Name: Baarish Ke Keede
+Description of this project: Front-end of "Baarish Ke Keede" Project
